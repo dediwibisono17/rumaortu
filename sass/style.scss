@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&family=Lora:wght@600&family=Montserrat:wght@400;700&family=Noticia+Text&family=PT+Serif&family=Dancing+Script:wght@700&family=Yeseva+One&display=swap');
 
 $gold: #C19977;
+$primary: #B1B5B7;
 
 .color {
     &-gold {
@@ -451,6 +452,7 @@ section {
     }
 }
 
+
 footer {
     .col-md-3 {
         margin-bottom: 16px;
@@ -464,9 +466,6 @@ footer {
             object-fit: contain;
         }
     }
-}
-
-footer {
     padding: 24px 0;
     background: black;
     a {
@@ -501,6 +500,247 @@ footer {
             &:hover {
                 // padding-left: 0 !important;
                 color: white;
+            }
+        }
+    }
+}
+
+.bannerx {
+    min-height: auto;
+}
+
+.dblh__divider--center {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-left: -10px;
+    left: 50%;
+    width: 21px;
+    height: 21px;
+    transform: translateY(100%);
+    color: $gold;
+    &::before {
+        left: 1px;
+        transform: translateX(-100%);
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 1px;
+        top: 10px;
+        background-color: currentColor;
+        opacity: .6;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 1px;
+        top: 10px;
+        background-color: currentColor;
+        opacity: .6;
+        left: 100%;
+        margin-left: -1px;
+    }
+    span {
+        position: absolute;
+        z-index: 1;
+        width: inherit;
+        height: inherit;
+        left: inherit;
+        margin-left: -10px;
+        &::before {
+            width: 70.75%;
+            height: 70.75%;
+            left: 3px;
+            top: 3px;
+            border: 1px solid $gold;
+        }
+        &::before,&::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+        &::after {
+            width: 41%;
+            height: 41%;
+            left: 6px;
+            top: 6px;
+            background-color: $gold;
+        }
+    }
+}
+
+.bannerx {
+    // position: relative;
+    .image {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        &::after {
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: rgba($color: #000000, $alpha: .4);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .titles {
+            position: absolute;
+            left: 10vw;
+            bottom: 5vh;
+            color: white;
+            @media screen and (min-width:1440px) {
+                left: 15vw;
+            }
+        }
+    }
+}
+
+.totop {
+    position: relative;
+    z-index: 40;
+}
+
+.menux {
+    .menu-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 16px;
+        color: #fff;
+        padding: 0 8px;
+        width: fit-content;
+        position: relative;
+        z-index: 6;
+        /* background: #0e1317; */
+        margin: 0 auto 24px;
+        h2 {
+            font-size: 28px;
+            position: relative;
+            z-index: 9;
+            background: #0e1317;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            width: 50%;
+            height: 2px;
+            z-index: 1;
+            background: $primary;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            width: 50%;
+            height: 2px;
+            z-index: 1;
+            background: $primary;
+        }
+    }
+    ul {
+        margin: 16px auto;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-bottom: 16px;
+        }
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background: $gold !important;
+        color: #000 !important;
+        font-weight: bold !important;
+    }
+    .nav-pills .nav-link {
+        color: white !important;
+    }
+    .nav-item {
+        margin: 0 4px;
+        border: 1px solid $gold;
+        border-radius: 8px;
+        transition: .2s;
+        &:hover {
+            background: $gold;
+        }
+        @media screen and (max-width:766px) {
+            margin: 4px;
+        }
+    }
+
+    // card
+    .card-menu {
+        width: 100%;
+        height: 320px;
+        border: 1px solid $gold;
+        position: relative;
+        margin-bottom: 32px;
+        background: black;
+        z-index: 8;
+        cursor: pointer;
+        &:hover {
+            .help {
+                border: 1px solid #c19977;
+            }
+            .namanya {
+                color: white;
+            }
+        }
+        .help {
+            border: 1px solid transparent;
+            top: -8px;
+            transition: .3s;
+            right: 8px;
+            position: absolute;
+            width: 93%;
+            height: 105%;
+            bottom: -8px;
+            z-index: 1;
+            left: 8px;
+        }
+        .tofront {
+            position: relative;
+            z-index: 40;
+            height: 100%;
+            background: #0e1317;
+        }
+        @media screen and (min-width:1440px) {
+            height: 320px;
+        }
+        @media screen and (max-width:766px) {
+            height: 320px;
+        }
+        .image {
+            width: 100%;
+            height: 75%;
+            padding: 8px;
+            @media screen and (min-width:1440px) {
+                padding: 16px 8px;
+                height: 80%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .namanya {
+            text-align: center;
+            padding: 8px 0;
+            font-size: 16px;
+            // color: white;
+            @media screen and (max-width:766px) {
+                font-size: 16px;
             }
         }
     }
