@@ -8,10 +8,10 @@ $primary: #B1B5B7;
         color: #c19977 !important;
     }
     &-text {
-        color: #B1B5B7;
+        color: #B1B5B7 !important;
     }
     &-white {
-        color: white;
+        color: white !important;
     }
 }
 
@@ -695,6 +695,11 @@ footer {
             .namanya {
                 color: white;
             }
+            .tofront {
+                .detail {
+                    opacity: 1;
+                }
+            }
         }
         .help {
             border: 1px solid transparent;
@@ -713,6 +718,24 @@ footer {
             z-index: 40;
             height: 100%;
             background: #0e1317;
+            .detail {
+                position: absolute;
+                left: 0;
+                transition: .2s;
+                right: 0;
+                padding: 16px;
+                top: 0;
+                opacity: 0;
+                bottom: 0;
+                background: linear-gradient(to top, black, rgba(0,0,0,.75), black);
+                p {
+                    font-size: 16px;
+                }
+                p,.font-bold {
+                    color: #B1B5B7;
+                }
+                
+            }
         }
         @media screen and (min-width:1440px) {
             height: 320px;
