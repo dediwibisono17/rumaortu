@@ -36,6 +36,9 @@ main {
     }
   }
 .font {
+    &-dancing{
+        font-family: 'Dancing Script';
+    }
     &-medium {
         font-size: 16px !important;
     }
@@ -510,6 +513,7 @@ footer {
 
 .bannerx {
     min-height: auto;
+    padding: 0;
 }
 
 .dblh__divider--center {
@@ -601,6 +605,8 @@ footer {
             left: 10vw;
             bottom: 5vh;
             color: white;
+            z-index: 99;
+            font-size: 52px;
             @media screen and (min-width:1440px) {
                 left: 15vw;
             }
@@ -780,5 +786,44 @@ footer {
     transition: .3s;
     &:hover {
         color: white;
+    }
+}
+.totop {
+    position: relative;
+    z-index: 43;
+}
+.travel {
+    height: 100%;
+    position: relative;
+    &__helping {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .imagesx {
+        width: 100%;
+        height: 320px;
+        &__small{
+            width: 100%;
+            height: 100px;
+            margin: 0 8px;
+            cursor: pointer;
+            &:hover {
+                opacity: .8;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
