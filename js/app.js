@@ -4,6 +4,9 @@ $(()=>{
             scrollTop: $("#menus").offset().top
         }, 200);
     })
+
+    // new WOW().init();
+    
 })
 
 $(".hero-slide").slick({
