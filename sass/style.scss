@@ -939,6 +939,9 @@ body {
     width: 640px;
     margin: 0 auto;
     padding: 32px;
+    @media screen and (max-width:766px) {
+        width: auto;
+    }
     .form-input {
         margin-bottom: 32px;
         position: relative;
@@ -970,6 +973,9 @@ body {
     &__content {
         display: inline-block;
         width: 45%;
+        @media screen and (max-width:766px) {
+            width: 100%;
+        }
     }
     &__img {
         display: inline-block;
