@@ -750,6 +750,9 @@ footer {
                 background: linear-gradient(to top, black, rgba(0,0,0,.75), black);
                 p {
                     font-size: 16px;
+                    @media screen and (max-width:766px) {
+                        font-size: 12px;
+                    }
                 }
                 p,.font-bold {
                     color: #B1B5B7;
