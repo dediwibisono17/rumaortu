@@ -153,6 +153,17 @@ main {
 }
 
 main {
+    .btn-sm {
+        color: #ffffff;
+        background-color: #222d3b;
+        border-color: transparent;
+        &:hover, &:focus,&:active {
+            background-color: $gold;
+            border-color: transparent !important;
+            outline: 0 !important;
+            box-shadow: none !important;
+        }
+    }
     .btn-primary {
         display: inline-block;
         position: relative;
@@ -864,6 +875,32 @@ footer {
         }
         &-right {
             // margin: auto;
+        }
+    }
+}
+
+body {
+    .modal-content {
+        background: transparent !important;
+    }
+    .modal {
+        .image {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+            height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .tutup {
+        margin: 16px auto;
+        text-align: center;
+        .btn {
+            background-color: #645344 !important;
+            color: white !important;
+            border: transparent !important;
         }
     }
 }
