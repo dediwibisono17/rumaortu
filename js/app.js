@@ -1,13 +1,17 @@
-$(()=>{
-    $(".scroll-to-menu").click(()=>{
-        $('html, body').animate({
-            scrollTop: $("#menus").offset().top
-        }, 200);
+// $(()=>{
+    $(document).ready(function(){
+        new WOW().init();
+        $(".scroll-to-menu").click(()=>{
+            $('html, body').animate({
+                scrollTop: $("#menus").offset().top
+            }, 200);
+        })
+
     })
 
-    // new WOW().init();
     
-})
+    
+// })
 
 $(".hero-slide").slick({
     dots: true,
