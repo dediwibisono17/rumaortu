@@ -592,7 +592,12 @@ footer {
     }
     .icon-href {
         display: inline;
+        
         .image {
+            transition: .3s;
+            &:hover {
+                background: $primary;
+            }
             width: 42px;
             background-color: $gold;
             padding: 8px;
