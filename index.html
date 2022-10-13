@@ -85,16 +85,17 @@
         <section class="hero">
             <div class="hero-slide">
                 <div class="image">
-                  <!-- <iframe  src="https://www.youtube.com/embed/diVgFah0iMM?autoplay=1">
-                  </iframe> -->
-                  <video width="320" height="240" loop="true" autoplay="autoplay" controls muted>
+                  <video loop="true" autoplay="autoplay" controls muted>
                     <source src="img/video.mp4" type="video/mp4">
                     <source src="img/video.mp4" type="video/ogg">
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div class="image">
-                    <img src="img/banner.jpg" alt="" title="">
+                  <picture>
+                    <source media="(max-width:766px)" srcset="img/banner.jpg">
+                    <img src="img/banner.jpg" alt="Flowers" title="">
+                  </picture>
                 </div>
             </div>
         </section>
