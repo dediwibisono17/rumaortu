@@ -15,7 +15,7 @@
 
 $(".hero-slide").slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     arrows:true,
     slidesToShow: 1,
@@ -24,7 +24,7 @@ $(".hero-slide").slick({
 
 $(".testimonial__content").slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     arrows:true,
     slidesToShow: 1,
@@ -64,3 +64,15 @@ $('.slider-nav-two').slick({
     centerMode: true,
     focusOnSelect: true
 });
+
+$("#first").click(()=>{
+    $('html, body').animate({
+        scrollTop: $("#gofirst").offset().top
+    }, 400);
+})
+
+$("#second").click(()=>{
+    $('html, body').animate({
+        scrollTop: $("#gosecond").offset().top
+    }, 400);
+})
