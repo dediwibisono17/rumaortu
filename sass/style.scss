@@ -951,11 +951,11 @@ footer {
     .gallery{
         display:block;
         margin: 0 auto;
-        border-bottom: 1px dotted #1d1d1d;
+        // border-bottom: 1px dotted #1d1d1d;
         &-left,&-right {
             display: inline-block;
             width: 45%;
-            margin: 16px;
+            margin: 0 16px;
             p {
                 @media screen and (max-width:766px) {
                     font-size: 14px;
